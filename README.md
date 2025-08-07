@@ -201,7 +201,8 @@ o	GitOps with ArgoCD or Flux — repos hold environment-specific manifests (Helm
 o	Argo Rollouts for progressive delivery (canary, blue-green).
 o	Promotion workflow: PR -> CI -> push image -> ArgoCD detects -> sync to cluster (with gating for prod).
 •	Platform developer portal: Backstage for templates, service catalog, onboarding, and metrics.
-# IaC pipeline: Terraform in CI with plan->policy-check->apply, locked by workspace and require approvals. Use Terraform Cloud/Enterprise or Atlantis for collaboration.
+# IaC pipeline: 
+Terraform in CI with plan->policy-check->apply, locked by workspace and require approvals. Use Terraform Cloud/Enterprise or Atlantis for collaboration.
 
 # VI. Observability & Telemetry
 •	Metrics: Prometheus (k8s) + Thanos or remote-write to CloudWatch Metrics / Cortex for long retention.
